@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />   
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1 class="logo">
+					<img src="images/logo.png"/>
+				</h1>
+				<button class="menu-btn" id="menu-btn"></button>
+				<div class="menu-box" id="menu-box">
+					<div class="menu-inner">
+						<button class="menu-close" id="menu-close">关闭</button>
+						<ul class="menu-list">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="applicant.html">业务办理</a></li>
+							<li><a href="search.html">进度查询</a></li>
+						</ul>
+					</div>					
+				</div>
+			</header>
+			<div class="banner">
+				<img src="images/banner.png" />
+			</div>
+			<div class="main">
+				<h2 class="title">填写父母基本信息</h2>
+				<form class="form-list">
+					<label class="form-item inline clearfix">
+						<span class="input-label">新生儿随：</span>
+						<label class="form-radio"><input type="radio" name="sex" />父亲</label>
+						<label class="form-radio"><input type="radio" name="sex" />母亲</label>
+						<label class="form-radio"><input type="radio" name="sex" />上户</label>
+					</label>
+					<label class="form-item">
+						<span class="input-label">新生儿与户主关系</span>
+						<select class="input-select">
+							<option>北京</option>
+							<option>上海</option>
+							<option>深圳</option>
+							<option>天津</option>
+							<option>上海</option>
+							<option>上海</option>
+							<option>上海</option>
+						</select>
+					</label>
+					<label class="form-item">
+						<span class="input-label">父亲户口所在地</span>
+						<select class="input-select">
+							<option>北京</option>
+							<option>上海</option>
+							<option>深圳</option>
+							<option>天津</option>
+							<option>上海</option>
+							<option>上海</option>
+							<option>上海</option>
+						</select>
+					</label>
+					<label class="form-item">
+						<span class="input-label">父亲姓名</span>
+						<input class="input-text" type="text" placeholder="请输入姓名"/>
+					</label>
+					<label class="form-item">
+						<span class="input-label">父亲身份证号</span>
+						<input class="input-text" type="text" placeholder="请输入18位号码"/>
+					</label>
+					<label class="form-item">
+						<span class="input-label">母亲姓名</span>
+						<input class="input-text" type="text" placeholder="请输入姓名"/>
+					</label>
+					<label class="form-item">
+						<span class="input-label">母亲身份证号</span>
+						<input class="input-text" type="text" placeholder="请输入18位号码"/>
+					</label>
+				</form>
+				<div class="toolbar">
+					<a href="baby.html" class="btn prve">上一步</a>
+					<a href="upload.html" class="btn next">下一步</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+	<script type="text/javascript" src="js/base.js" ></script>
+</html>

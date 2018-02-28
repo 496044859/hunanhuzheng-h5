@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />   
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1 class="logo">
+					<img src="images/logo.png"/>
+				</h1>
+				<button class="menu-btn" id="menu-btn"></button>
+				<div class="menu-box" id="menu-box">
+					<div class="menu-inner">
+						<button class="menu-close" id="menu-close">关闭</button>
+						<ul class="menu-list">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="applicant.html">业务办理</a></li>
+							<li><a href="search.html">进度查询</a></li>
+						</ul>
+					</div>					
+				</div>
+			</header>
+			<div class="banner">
+				<img src="images/banner.png" />
+			</div>
+			<div class="main">
+				<h2 class="title">上传图片信息</h2>
+				<form class="form-list">
+					<div class="upload-item">
+						<h3 class="upload-title"><span class="required">*</span>医学出生证明</h3>
+						<div class="row">
+							<div class="col">
+								<div class="img-box">
+									<img class="upload-img" src="">
+									<span class="upload-del"></span>
+								</div>
+							</div>
+							<div class="col">
+								<label class="upload-btn">
+									<span class="upload-icon"></span>
+									<span class="upload-text">上传图片</span>
+									<input class="upload-input" type="file" accept="image/*">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="upload-item">
+						<h3 class="upload-title"><span class="required">*</span>户口本首页</h3>
+						<div class="row">
+							<div class="col">
+								<div class="img-box booklet">
+									<img class="upload-img" src="">
+									<span class="upload-del"></span>
+								</div>
+							</div>
+							<div class="col">
+								<label class="upload-btn">
+									<span class="upload-icon"></span>
+									<span class="upload-text">上传图片</span>
+									<input class="upload-input" type="file" accept="image/*">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="upload-item">
+						<h3 class="upload-title">父亲身份证正面</h3>
+						<div class="row">
+							<div class="col">
+								<div class="img-box cardZ">
+									<img class="upload-img" src="">
+									<span class="upload-del"></span>
+								</div>
+							</div>
+							<div class="col">
+								<label class="upload-btn">
+									<span class="upload-icon"></span>
+									<span class="upload-text">上传图片</span>
+									<input class="upload-input" type="file" accept="image/*">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="upload-item">
+						<h3 class="upload-title">父亲身份证反面</h3>
+						<div class="row">
+							<div class="col">
+								<div class="img-box cardF">
+									<img class="upload-img" src="">
+									<span class="upload-del"></span>
+								</div>
+							</div>
+							<div class="col">
+								<label class="upload-btn">
+									<span class="upload-icon"></span>
+									<span class="upload-text">上传图片</span>
+									<input class="upload-input" type="file" accept="image/*">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="upload-item">
+						<h3 class="upload-title">母亲亲身份证正面</h3>
+						<div class="row">
+							<div class="col">
+								<div class="img-box cardZ">
+									<img class="upload-img" src="">
+									<span class="upload-del"></span>
+								</div>
+							</div>
+							<div class="col">
+								<label class="upload-btn">
+									<span class="upload-icon"></span>
+									<span class="upload-text">上传图片</span>
+									<input class="upload-input" type="file" accept="image/*">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="upload-item">
+						<h3 class="upload-title">母亲身份证反面</h3>
+						<div class="row">
+							<div class="col">
+								<div class="img-box cardF">
+									<img class="upload-img" src="">
+									<span class="upload-del"></span>
+								</div>
+							</div>
+							<div class="col">
+								<label class="upload-btn">
+									<span class="upload-icon"></span>
+									<span class="upload-text">上传图片</span>
+									<input class="upload-input" type="file" accept="image/*">
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+				<p class="warning">注：带红色的*为必填项</p>
+				<div class="toolbar">
+					<a href="parent.html" class="btn prve">上一步</a>
+					<a href="edit.html" class="btn next">下一步</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+	<script type="text/javascript" src="js/base.js" ></script>
+	<script type="text/javascript">
+		 $(".upload-input").change(function(event){
+		 	var f = $(this)[0].files[0];
+		 	//获取上传图片的本地路径
+			var src = window.URL.createObjectURL(f);
+			console.log(src);		
+			$(this).parents('.upload-item').find('.upload-img').attr('src',src);			
+		 });
+		
+		//document.getElementById('preview').src = src;
+	</script>
+</html>
